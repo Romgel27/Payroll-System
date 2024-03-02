@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'Poppins', sans-serif;
+    transition: .2s linear;
+}
+html
+{
+    
+    overflow-x: hidden;
+}
+
+body
+{
+    background: #1f242d;
+    
+}
+.navbar
+{
+    background: #27374D;
+}
+.nav-item a
+
+{
+    color:#f0f0f0;
+}
+
+main {
+    margin-top: 85px;
+     padding: 2rem 1.5rem;
+    background: #1f242d;
+    min-height: calc(100vh - 90px);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.card-single {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2px;
+}
+.card-single div:last-child span {
+    font-size: 3rem;
+    color: var(--icon);
+}
+.card-single div:first-child span {
+    color: var(--text-grey);
+}
+.card-single:last-child {
+    background: #fff
+}
+.card-single:last-child h1
+.card-single:last-child div:last-child span 
+.card-single:last-child div:first-child span {
+    color: #fff;
+}
+.recent-grid {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 65% auto;
+}
+.card {
+    background: #fff;
+    border-radius: 5px;
+}
+.card-header,
+.card-body {
+    padding: 1rem;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+.card-header button {
+    background: var(--text-grey);
+    border-radius: 10px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: 1px solid var (--text-grey);
+}
+.user-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.user-wrapper i{
+    font-size: 24px;
+    color: #fff;
+}
+
+.user-wrapper img {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user-wrapper h4 {
+    margin-bottom: 0rem !important;
+    font-size: 24px;
+    color: #ffff;
+}
+
+.user-wrapper small {
+    display: inline-block;
+    color: var(--text-grey);
+    margin-top: -10px !important;
+    font-size:18px ;
+}
+
+.user-wrapper .menu {
+    position: absolute;
+    margin: 20px;
+    top: 120px;
+    right: -3px;
+    padding: 10px 20px;
+    background: rgb(95, 97, 97);
+    width: 250px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border: 1px;
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.user-wrapper .menu.active
+{
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+.user-wrapper .menu::before 
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 120px;
+    width: 20px;
+    height: 20px;
+    background: rgb(95, 97, 97);
+    transform: rotate(45deg);
+}
+.user-wrapper .menu h3 
+{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2em;
+}
+.user-wrapper .menu h3 span
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.user-wrapper .menu ul li 
+{
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+}
+.user-wrapper .menu ul li img
+{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.user-wrapper .menu ul li:hover 
+{
+    color: var(--main-color);
+}
+.user-wrapper .menu ul li:hover img 
+{
+    opacity: 1;
+}
+.user-wrapper .menu ul li a 
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #cecece;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.card
+{
+    
+    left:40rem;
+    justify-content: center;
+    justify-items: center;
+}
+.picker {
+    display: inline;
+    border: 1px solid lightgray;
+    padding : 4px;
+  }
+  input {
+    border: 0;
+  }
